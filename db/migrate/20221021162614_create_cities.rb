@@ -8,3 +8,13 @@ class CreateCities < ActiveRecord::Migration[7.0]
     end
   end
 end
+# new state
+# state = State.new(name: "New York")
+# new city
+# city = City.new(name: "New York City", state_id: 1)
+# new review
+# review = Review.new(content: "My review", rating: 5, place_id: 1, user_id: 1)
+# new place_amenity
+# place_amenity = PlaceAmenity.new(place_id: 1, amenity_id: 1)
+# new amenity
+# amenity = Amenity.new(name: "Wifi")

@@ -18,3 +18,5 @@ class CreatePlaces < ActiveRecord::Migration[7.0]
     end
   end
 end
+
+# place = Place.new(name: "My place", description: "My description", number_rooms: 2, number_bathrooms: 1, max_guest: 4, price_per_night: 100, latitude: 48.856614, longitude: 2.3522219)

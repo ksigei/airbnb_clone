@@ -5,5 +5,4 @@ class City < ApplicationRecord
     validates :name, presence: true
     validates :state_id, presence: true
 
-    def self.search(search)
 end
