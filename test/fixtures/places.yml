@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  name: MyString
+  city_id: MyString
+  description: MyString
+  number_rooms: 1
+  number_bathrooms: 1
+  max_guest: 1
+  price_per_night: 1
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  user_id: MyString
+  name: MyString
+  city_id: MyString
+  description: MyString
+  number_rooms: 1
+  number_bathrooms: 1
+  max_guest: 1
+  price_per_night: 1
+  latitude: 1.5
+  longitude: 1.5
