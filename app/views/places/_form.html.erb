@@ -1,0 +1,39 @@
+<%= form_with(model:place, class: "contents") do |form| %>
+  <% if place.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(place.errors.count, "error") %> prohibited thisplace from being saved:</h2>
+
+      <ul>
+        <%place.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter name" %>
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "form-control", placeholder: "Enter description" %>
+    <%= form.label :cover_image %>
+    <%= form.text_field :cover_image, class: "form-control", placeholder: "Enter cover_image" %>
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id, class: "form-control", placeholder: "City" %>
+    <%= form.label :number_rooms %>
+    <%= form.text_field :number_rooms, class: "form-control", placeholder: "Enter number_rooms" %>
+    <%= form.label :number_bathrooms %>
+    <%= form.text_field :number_bathrooms, class: "form-control", placeholder: "Enter number_bathrooms" %>
+    <%= form.label :price_by_night %>
+    <%= form.text_field :price_by_night, class: "form-control", placeholder: "Enter price_by_night" %>
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, class: "form-control", placeholder: "Enter latitude" %>
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, class: "form-control", placeholder: "Enter longitude" %>
+    <%= form.label :category_id %>
+    <%= form.text_field :category_id, class: "form-control", placeholder: "Enter category_id" %>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, class: "form-control", placeholder: "Enter user_id" %>
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

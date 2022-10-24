@@ -9,6 +9,7 @@ class Place < ApplicationRecord
 
     
     validates :name, presence: true
+    validates :cover_image, presence: true, format: { with: %r{\.(gif|jpg|png)\Z}i, message: 'must be a URL for GIF, JPG or PNG image.' }
     validates :city_id, presence: true
     validates :user_id, presence: true
     validates :description, presence: true
