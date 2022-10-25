@@ -65,7 +65,7 @@ class UsersController < ApplicationController
    def authenticate_user
       # if there is no user logged in, redirect to the login page
       redirect_to login_path unless logged_in?
-    end
+   end
 
 
   private
