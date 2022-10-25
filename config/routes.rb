@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  resources :places
-  resources :users
-  root 'places#index'
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  # root 'users#index'
+  resources :places
+  root 'places#index'
+
+  resources :states 
+  resources :cities 
+  resources :reviews
+  resources :place_amenities
+  resources :amenities
 end

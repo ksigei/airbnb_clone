@@ -6,5 +6,8 @@
     </div>
     <div class="card-footer">
       <small class="text-muted"><%= place.updated_at %></small>
+      <small class="text-muted">Hosted By:<%= link_to place.user.first_name, user_path(place.user) %></small>
+      <small class="text-muted"><%= place.city.name %></small>
+      <small class="text-muted">$<%= place.price_per_night %> per night</small>
     </div>
   </div>
